@@ -1,10 +1,10 @@
 import React from 'react';
-//import './Avatarlist.css';
+import './Avatarstyle.css';
 
 const Avatarlist=(props)=>{
     return(
         <div className="avatarstyle">
-        <img src = "https://joeschmoe.io/api/v1/<Raj>" alt="Raj" />
+        <img src = {`https://joeschmoe.io/api/v1/${props.name}`} alt="Raj" />
         <h1>{props.name}</h1>
         <p>{props.work}</p>
         </div>
